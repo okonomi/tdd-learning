@@ -1,0 +1,1 @@
+phpunitrunner -p test/bootstrap.php -c -a -w src test
