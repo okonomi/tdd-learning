@@ -1,11 +1,10 @@
 <?php
 
+require_once 'Money.php';
 
-class Franc
+
+class Franc extends Money
 {
-    private $amount;
-
-
     public function __construct($amount)
     {
         $this->amount = $amount;
