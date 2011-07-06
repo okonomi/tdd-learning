@@ -15,8 +15,8 @@ class Dollar extends Money
         return new Dollar($this->amount * $multiplier);
     }
 
-    public function equals(Dollar $dollar)
+    public function equals(Money $money)
     {
-        return $this->amount === $dollar->amount;
+        return $this->amount === $money->amount;
     }
 }
