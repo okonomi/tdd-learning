@@ -1,7 +1,9 @@
 <?php
 
+require_once 'Money.php';
 
-class Dollar
+
+class Dollar extends Money
 {
     private $amount;
 
