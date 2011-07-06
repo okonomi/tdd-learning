@@ -1,6 +1,7 @@
 <?php
 
 require_once 'Dollar.php';
+require_once 'Franc.php';
 
 
 class DollarTest extends PHPUnit_Framework_TestCase
