@@ -5,6 +5,8 @@ abstract class Money
 {
     protected $amount;
 
+    protected $currency;
+
 
     public function equals(Money $money)
     {
@@ -24,5 +26,8 @@ abstract class Money
 
     public abstract function times($multiplier);
 
-    public abstract function currency();
+    public function currency()
+    {
+        return $this->currency;
+    }
 }
