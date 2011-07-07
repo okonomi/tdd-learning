@@ -1,7 +1,7 @@
 <?php
 
 
-class Money
+abstract class Money
 {
     protected $amount;
 
@@ -11,4 +11,11 @@ class Money
         return $this->amount === $money->amount &&
             get_class($this) === get_class($money);
     }
+
+    public static function dollar($amount)
+    {
+        return new Dollar($amount);
+    }
+
+    public abstract function times($multiplier);
 }
