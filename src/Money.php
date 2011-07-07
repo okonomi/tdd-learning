@@ -23,4 +23,6 @@ abstract class Money
     }
 
     public abstract function times($multiplier);
+
+    public abstract function currency();
 }
