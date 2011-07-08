@@ -1,7 +1,7 @@
 <?php
 
 
-abstract class Money
+class Money
 {
     protected $amount;
 
@@ -30,7 +30,10 @@ abstract class Money
         return new Franc($amount, 'CHF');
     }
 
-    abstract public function times($multiplier);
+    public function times($multiplier)
+    {
+        return null;
+    }
 
     public function currency()
     {
