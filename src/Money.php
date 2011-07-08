@@ -17,7 +17,7 @@ class Money
     public function equals(Money $money)
     {
         return $this->amount === $money->amount &&
-            get_class($this) === get_class($money);
+            $this->currency() === $money->currency();
     }
 
     public static function dollar($amount)
