@@ -3,7 +3,7 @@
 require_once 'Money.php';
 
 
-class DollarTest extends PHPUnit_Framework_TestCase
+class MoneyTest extends PHPUnit_Framework_TestCase
 {
     public function testMultiplication()
     {
