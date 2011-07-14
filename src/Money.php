@@ -1,7 +1,9 @@
 <?php
 
+require_once 'Expression.php';
 
-class Money
+
+class Money implements Expression
 {
     protected $amount;
 
